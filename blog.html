@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <title>Blog — Hairstudio Igor | Haartips, Trends & Inspiratie</title>
+    <link rel="icon" href="images/icon.webp" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Blog van Hairstudio Igor Woerden. Tips over haarverzorging, kleurtrends, herenverzorging, baard tips en de beste Keune & Olaplex producten." name="description">
+    <meta content="haarverzorging tips, kleurtrends haar, baard verzorging tips, keune producten, kapper blog woerden" name="keywords">
+    <meta content="Hairstudio Igor" name="author">
+    <meta property="og:title" content="Blog — Hairstudio Igor Woerden">
+    <meta property="og:description" content="Haartips, trends en inspiratie van de kapper in Woerden.">
+    <meta property="og:type" content="website">
+    <!-- CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css">
+    <link href="css/datepicker.css" rel="stylesheet" type="text/css">
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="fonts/fontawesome6/css/all.min.css" rel="stylesheet" type="text/css">
+    <style>
+        :root {
+            --primary-color: #790000;
+            --primary-color-rgb: 121, 0, 0;
+            --secondary-color: #AD974F;
+            --secondary-color-rgb: 173, 151, 79;
+        }
+        body, h1, h2, h3, h4, h5, h6, p, a, span, div, li, input, textarea, select, button, label {
+            font-family: 'Montserrat', sans-serif !important;
+        }
+        .btn-main { background: #790000 !important; }
+        .btn-main.btn-gold { background: #AD974F !important; }
+        .id-color, .id-color i { color: #AD974F !important; }
+        .text-gold { color: #AD974F !important; }
+        .text-bordeaux { color: #790000 !important; }
+        .bg-dark, .section-dark, .bg-dark-2 { background-color: #222222 !important; }
+        .subtitle { color: #AD974F !important; text-transform: uppercase; letter-spacing: 2px; font-size: 14px; font-weight: 600; }
+        .blog-category { border: 2px solid rgba(173,151,79,0.3); border-radius: 12px; padding: 40px 30px; text-align: center; height: 100%; transition: all 0.3s ease; }
+        .blog-category:hover { border-color: #AD974F; transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        .blog-category i { font-size: 48px; color: #AD974F; margin-bottom: 20px; display: block; }
+        .blog-category h4 { margin-bottom: 10px; }
+        .blog-placeholder { background: #f8f8f8; border-radius: 12px; overflow: hidden; height: 100%; transition: all 0.3s ease; }
+        .blog-placeholder:hover { box-shadow: 0 10px 30px rgba(0,0,0,0.08); transform: translateY(-3px); }
+        .blog-placeholder img { width: 100%; height: 200px; object-fit: cover; }
+        .blog-placeholder .blog-content { padding: 25px; }
+        .blog-placeholder .blog-meta { font-size: 13px; color: #AD974F; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+        .blog-placeholder h4 { margin-bottom: 10px; }
+        .blog-placeholder p { color: #666; font-size: 15px; }
+        footer .subfooter { border-top: 1px solid rgba(255,255,255,0.1); padding: 20px 0; margin-top: 40px; }
+        .studiolee-link { color: #AD974F; text-decoration: none; }
+        .studiolee-link:hover { text-decoration: underline; }
+    </style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <div class="float-text show-on-scroll"><span><a href="#">Naar boven</a></span></div>
+        <div class="scrollbar-v show-on-scroll"></div>
+        <div id="de-loader"></div>
+
+        <header class="transparent header-light header-float">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-inner">
+                            <div class="de-flex">
+                                <div class="de-flex-col">
+                                    <div id="logo">
+                                        <a href="index.html">
+                                            <img class="logo-main" src="images/logo.webp" alt="Hairstudio Igor">
+                                            <img class="logo-scroll" src="images/logo.webp" alt="Hairstudio Igor">
+                                            <img class="logo-mobile" src="images/logo.webp" alt="Hairstudio Igor">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="de-flex-col">
+                                    <div class="de-flex-col header-col-mid">
+                                        <ul id="mainmenu">
+                                            <li><a class="menu-item" href="index.html">Home</a></li>
+                                            <li><a class="menu-item" href="diensten.html">Diensten</a></li>
+                                            <li><a class="menu-item" href="tarieven.html">Tarieven</a></li>
+                                            <li><a class="menu-item" href="over-ons.html">Over Ons</a></li>
+                                            <li><a class="menu-item active" href="blog.html">Blog</a></li>
+                                            <li><a class="menu-item" href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="de-flex-col">
+                                    <a class="btn-main fx-slide w-100" href="contact.html"><span>Afspraak Maken</span></a>
+                                    <div class="menu_side_area"><span id="menu-btn"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- PAGE HEADER -->
+        <section class="no-bottom relative overflow-hidden z-1000" data-bgimage="url(images/background/5.webp)">
+            <div class="abs w-100 h-100 top-0" style="background: rgba(34,34,34,0.6);"></div>
+            <div class="container relative z-2">
+                <div class="spacer-double"></div>
+                <div class="spacer-double"></div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h1 class="text-light mb-0">Blog</h1>
+                        <p class="text-light fs-18">Haartips, trends en inspiratie van onze hairartists.</p>
+                    </div>
+                </div>
+                <div class="spacer-single"></div>
+            </div>
+        </section>
+
+        <!-- BLOG INTRO -->
+        <section>
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <div class="subtitle">Kennis & Inspiratie</div>
+                        <h2>Alles over haar, trends en verzorging</h2>
+                        <p class="fs-18">Op onze blog delen we regelmatig tips, trends en inspiratie over haarverzorging, kleurkeuzes, baardonderhoud en de nieuwste producten. Onze hairartists schrijven vanuit hun dagelijkse ervaring in de salon — echte kennis, geen marketingpraatjes.</p>
+                        <p>Binnenkort verschijnen hier onze eerste artikelen. Houd deze pagina in de gaten of volg ons op social media om niets te missen!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOG CATEGORIES -->
+        <section class="pt-0">
+            <div class="container">
+                <div class="row justify-content-center text-center mb-5">
+                    <div class="col-lg-8">
+                        <h3>Onze blog-categorieeen</h3>
+                        <p>Wij schrijven over vier hoofdonderwerpen. Klik op een categorie om te zien welke artikelen er binnenkort verschijnen.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-category">
+                            <i class="fa-solid fa-spray-can-sparkles"></i>
+                            <h4>Haarverzorging</h4>
+                            <p class="mb-0">Tips voor gezond, sterk en glanzend haar. Van wasroutines tot de beste producten voor jouw haartype.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-category">
+                            <i class="fa-solid fa-palette"></i>
+                            <h4>Kleurtrends</h4>
+                            <p class="mb-0">De nieuwste kleurtechnieken en seizoenstrends. Balayage, bronde, copper — ontdek wat bij jou past.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-category">
+                            <i class="fa-solid fa-user"></i>
+                            <h4>Heren & Baard</h4>
+                            <p class="mb-0">Alles over herenkapsels, baardverzorging, trimtips en de Gold Dry Night lifestyle.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-category">
+                            <i class="fa-solid fa-flask"></i>
+                            <h4>Producten</h4>
+                            <p class="mb-0">Reviews en tips over Keune, Olaplex en andere professionele haarproducten die wij in de salon gebruiken.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UPCOMING ARTICLES -->
+        <section class="bg-dark section-dark text-light">
+            <div class="container">
+                <div class="row justify-content-center text-center mb-5">
+                    <div class="col-lg-8">
+                        <div class="subtitle s2 text-gold">Binnenkort</div>
+                        <h2>Artikelen die eraan komen</h2>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-placeholder" style="background: #2a2a2a;">
+                            <img src="images/news/s1.webp" alt="Haarverzorging tips">
+                            <div class="blog-content">
+                                <div class="blog-meta text-gold">Haarverzorging</div>
+                                <h4 class="text-light">5 fouten die je haar beschadigen (en hoe je ze voorkomt)</h4>
+                                <p class="text-light" style="opacity: 0.7;">De meestgemaakte fouten bij dagelijkse haarverzorging en hoe je ze eenvoudig kunt vermijden voor gezonder haar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-placeholder" style="background: #2a2a2a;">
+                            <img src="images/news/s2.webp" alt="Balayage trends">
+                            <div class="blog-content">
+                                <div class="blog-meta text-gold">Kleurtrends</div>
+                                <h4 class="text-light">Balayage in 2026: de trends die je moet kennen</h4>
+                                <p class="text-light" style="opacity: 0.7;">Van soft copper tot mushroom brown — de populairste balayage-varianten van dit seizoen uitgelegd.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-placeholder" style="background: #2a2a2a;">
+                            <img src="images/news/s3.webp" alt="Baard verzorging tips">
+                            <div class="blog-content">
+                                <div class="blog-meta text-gold">Heren & Baard</div>
+                                <h4 class="text-light">De complete gids voor baardverzorging thuis</h4>
+                                <p class="text-light" style="opacity: 0.7;">Trimmen, olieen, wassen en stylen — alles wat je moet weten om je baard er elke dag top uit te laten zien.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-placeholder" style="background: #2a2a2a;">
+                            <img src="images/news/s4.webp" alt="Olaplex behandeling">
+                            <div class="blog-content">
+                                <div class="blog-meta text-gold">Producten</div>
+                                <h4 class="text-light">Olaplex: wat is het en waarom werkt het zo goed?</h4>
+                                <p class="text-light" style="opacity: 0.7;">De wetenschap achter Olaplex en waarom het al jarenlang het populairste haarherstellende product ter wereld is.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-placeholder" style="background: #2a2a2a;">
+                            <img src="images/news/s5.webp" alt="Gold Dry Night">
+                            <div class="blog-content">
+                                <div class="blog-meta text-gold">Heren & Baard</div>
+                                <h4 class="text-light">Gold Dry Night: wat maakt het zo populair?</h4>
+                                <p class="text-light" style="opacity: 0.7;">Een kijkje achter de schermen van onze exclusieve herenavond. Waarom mannen elke week terugkomen.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-placeholder" style="background: #2a2a2a;">
+                            <img src="images/news/s6.webp" alt="Keune producten">
+                            <div class="blog-content">
+                                <div class="blog-meta text-gold">Producten</div>
+                                <h4 class="text-light">Keune vs. drogisterij: waarom professionele producten beter zijn</h4>
+                                <p class="text-light" style="opacity: 0.7;">Het verschil tussen salonproducten en supermarktshampoo uitgelegd. Inclusief tips om thuis het beste resultaat te behalen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section>
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h2>Wil je op de hoogte blijven?</h2>
+                        <p class="fs-18">Volg ons op social media voor dagelijkse tips, salonupdates en als eerste nieuwe blogartikelen lezen. Of neem contact op voor persoonlijk advies.</p>
+                        <div class="spacer-half"></div>
+                        <a class="btn-main fx-slide" href="contact.html"><span>Afspraak Maken</span></a>&nbsp;
+                        <a class="btn-main btn-gold fx-slide" href="tel:0348499861"><span><i class="fa-solid fa-phone me-2"></i>0348 499 861</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- footer -->
+    <footer class="section-dark">
+        <div class="container">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center">
+                        <img src="images/logo.webp" class="w-200px" alt="Hairstudio Igor">
+                        <div class="spacer-single"></div>
+                        <div class="fs-16">Molenvlietbrink 242<br>3448 HS Woerden</div>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer-double"></div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 mb-sm-30">
+                    <div class="d-flex justify-content-center">
+                        <i class="fs-48 text-gold fa-solid fa-phone"></i>
+                        <div class="ms-3"><h4 class="mb-0">Bel Ons</h4><p><a href="tel:0348499861" class="text-white">0348 499 861</a></p></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-sm-30">
+                    <div class="d-flex justify-content-center">
+                        <i class="fs-48 text-gold fa-brands fa-whatsapp"></i>
+                        <div class="ms-3"><h4 class="mb-0">WhatsApp</h4><p><a href="https://wa.me/31620835583" class="text-white">06 20 83 55 83</a></p></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-sm-30">
+                    <div class="d-flex justify-content-center">
+                        <i class="fs-48 text-gold fa-solid fa-clock"></i>
+                        <div class="ms-3"><h4 class="mb-0">Openingstijden</h4><p>Di-Vr 09:00-17:30<br>Za 08:30-16:00<br>Ma gesloten</p></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-sm-30">
+                    <div class="d-flex justify-content-center">
+                        <i class="fs-48 text-gold fa-solid fa-envelope"></i>
+                        <div class="ms-3"><h4 class="mb-0">E-mail</h4><p><a href="mailto:info@hairstudioigor.nl" class="text-white">info@hairstudioigor.nl</a></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subfooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">&copy; 2026 Hairstudio Igor — Woerden</div>
+                    <div class="col-md-6 text-md-end">
+                        Website door <a href="https://www.studiolee.nl" target="_blank" class="studiolee-link">STUDIOLEE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/vendors.js"></script>
+    <script src="js/designesia.js"></script>
+
+</body>
+
+</html>

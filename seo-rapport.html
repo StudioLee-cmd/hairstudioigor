@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <title>SEO Rapport — Hairstudio Igor | Website Analyse & Aanbevelingen</title>
+    <link rel="icon" href="images/icon.webp" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="SEO rapport voor Hairstudio Igor Woerden. Analyse van de huidige website, gevonden problemen en concrete aanbevelingen voor verbetering." name="description">
+    <meta content="seo rapport kapper, website analyse kapsalon, seo audit woerden" name="keywords">
+    <meta content="STUDIOLEE" name="author">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css">
+    <link href="css/datepicker.css" rel="stylesheet" type="text/css">
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="fonts/fontawesome6/css/all.min.css" rel="stylesheet" type="text/css">
+    <style>
+        :root {
+            --primary-color: #790000;
+            --primary-color-rgb: 121, 0, 0;
+            --secondary-color: #AD974F;
+            --secondary-color-rgb: 173, 151, 79;
+        }
+        body, h1, h2, h3, h4, h5, h6, p, a, span, div, li, input, textarea, select, button, label {
+            font-family: 'Montserrat', sans-serif !important;
+        }
+        .btn-main { background: #790000 !important; }
+        .btn-main.btn-gold { background: #AD974F !important; }
+        .id-color, .id-color i { color: #AD974F !important; }
+        .text-gold { color: #AD974F !important; }
+        .text-bordeaux { color: #790000 !important; }
+        .text-red { color: #dc3545 !important; }
+        .text-orange { color: #fd7e14 !important; }
+        .text-green { color: #28a745 !important; }
+        .bg-dark, .section-dark, .bg-dark-2 { background-color: #222222 !important; }
+        .subtitle { color: #AD974F !important; text-transform: uppercase; letter-spacing: 2px; font-size: 14px; font-weight: 600; }
+        .score-circle {
+            width: 180px; height: 180px; border-radius: 50%;
+            border: 8px solid #dc3545; display: flex; align-items: center;
+            justify-content: center; margin: 0 auto 20px;
+            background: rgba(220,53,69,0.05);
+        }
+        .score-circle .score-number { font-size: 56px; font-weight: 800; color: #dc3545; line-height: 1; }
+        .score-circle .score-label { font-size: 14px; color: #666; }
+        .issue-card { border-left: 4px solid #dc3545; background: #fff; padding: 20px 25px; margin-bottom: 15px; border-radius: 0 8px 8px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .issue-card.warning { border-left-color: #fd7e14; }
+        .issue-card.info { border-left-color: #AD974F; }
+        .issue-card h5 { margin-bottom: 8px; }
+        .issue-card .severity { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        .issue-card .severity.critical { color: #dc3545; }
+        .issue-card .severity.warning { color: #fd7e14; }
+        .issue-card .severity.info { color: #AD974F; }
+        .checklist-item { display: flex; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,0.08); }
+        .checklist-item:last-child { border-bottom: none; }
+        .checklist-item i { margin-right: 12px; margin-top: 3px; font-size: 18px; flex-shrink: 0; }
+        .checklist-item .fail { color: #dc3545; }
+        .checklist-item .pass { color: #28a745; }
+        .checklist-item .partial { color: #fd7e14; }
+        .pricing-table { width: 100%; border-collapse: collapse; }
+        .pricing-table th { background: #AD974F; color: #fff; padding: 15px 20px; text-align: left; font-weight: 600; }
+        .pricing-table td { padding: 15px 20px; border-bottom: 1px solid rgba(0,0,0,0.08); }
+        .pricing-table tr:hover td { background: rgba(173,151,79,0.05); }
+        .pricing-table .price { font-weight: 700; color: #790000; font-size: 18px; }
+        .report-badge { display: inline-block; background: rgba(173,151,79,0.1); color: #AD974F; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+        footer .subfooter { border-top: 1px solid rgba(255,255,255,0.1); padding: 20px 0; margin-top: 40px; }
+        .studiolee-link { color: #AD974F; text-decoration: none; }
+        .studiolee-link:hover { text-decoration: underline; }
+    </style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <div class="float-text show-on-scroll"><span><a href="#">Naar boven</a></span></div>
+        <div class="scrollbar-v show-on-scroll"></div>
+        <div id="de-loader"></div>
+
+        <header class="transparent header-light header-float">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-inner">
+                            <div class="de-flex">
+                                <div class="de-flex-col">
+                                    <div id="logo">
+                                        <a href="index.html">
+                                            <img class="logo-main" src="images/logo.webp" alt="Hairstudio Igor">
+                                            <img class="logo-scroll" src="images/logo.webp" alt="Hairstudio Igor">
+                                            <img class="logo-mobile" src="images/logo.webp" alt="Hairstudio Igor">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="de-flex-col">
+                                    <div class="de-flex-col header-col-mid">
+                                        <ul id="mainmenu">
+                                            <li><a class="menu-item" href="index.html">Home</a></li>
+                                            <li><a class="menu-item" href="diensten.html">Diensten</a></li>
+                                            <li><a class="menu-item" href="tarieven.html">Tarieven</a></li>
+                                            <li><a class="menu-item" href="over-ons.html">Over Ons</a></li>
+                                            <li><a class="menu-item" href="blog.html">Blog</a></li>
+                                            <li><a class="menu-item" href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="de-flex-col">
+                                    <a class="btn-main fx-slide w-100" href="contact.html"><span>Afspraak Maken</span></a>
+                                    <div class="menu_side_area"><span id="menu-btn"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- PAGE HEADER -->
+        <section class="no-bottom relative overflow-hidden z-1000" data-bgimage="url(images/background/6.webp)">
+            <div class="abs w-100 h-100 top-0" style="background: rgba(34,34,34,0.7);"></div>
+            <div class="container relative z-2">
+                <div class="spacer-double"></div>
+                <div class="spacer-double"></div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="report-badge mb-3">Vertrouwelijk Rapport</div>
+                        <h1 class="text-light mb-0">SEO Rapport</h1>
+                        <p class="text-light fs-18">Website analyse voor Hairstudio Igor — april 2026</p>
+                    </div>
+                </div>
+                <div class="spacer-single"></div>
+            </div>
+        </section>
+
+        <!-- SCORE OVERVIEW -->
+        <section>
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-4 text-center">
+                        <div class="score-circle">
+                            <div>
+                                <div class="score-number">35</div>
+                                <div class="score-label">/ 100</div>
+                            </div>
+                        </div>
+                        <h3 class="text-red">Onvoldoende</h3>
+                        <p class="text-muted">Huidige SEO-score</p>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="subtitle">Samenvatting</div>
+                        <h2>De huidige situatie</h2>
+                        <p>De website van Hairstudio Igor functioneert als een basis online visitekaartje, maar mist cruciale elementen om goed gevonden te worden in Google. De site heeft geen blog, geen gestructureerde data (Schema.org), minimale SEO-optimalisatie en de content is grotendeels ongewijzigd sinds 2021.</p>
+                        <p>Google beloont websites die regelmatig verse content publiceren, technisch goed in elkaar zitten en autoriteit opbouwen via reviews en backlinks. Op al deze punten scoort de huidige site ondermaats. Het gevolg: potentiele klanten die zoeken op "kapper woerden" of "balayage woerden" vinden de concurrentie sneller dan Hairstudio Igor.</p>
+                        <p>Het goede nieuws: de basis is er. Met gerichte verbeteringen kan de score snel omhoog en kan Hairstudio Igor weer concurreren om de topposities in Google.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GEVONDEN PROBLEMEN -->
+        <section class="pt-0">
+            <div class="container">
+                <div class="subtitle">Analyse</div>
+                <h2 class="mb-4">Gevonden problemen</h2>
+
+                <div class="issue-card">
+                    <span class="severity critical"><i class="fa-solid fa-circle-xmark me-1"></i> Kritiek</span>
+                    <h5>Geen blog / content marketing</h5>
+                    <p class="mb-0">De website heeft geen blog. Dit is in 2026 een van de belangrijkste SEO-signalen. Zonder regelmatige content publicatie ziet Google de site als inactief. Concurrenten die wel bloggen bouwen continu autoriteit op en verdringen Hairstudio Igor in de zoekresultaten.</p>
+                </div>
+
+                <div class="issue-card">
+                    <span class="severity critical"><i class="fa-solid fa-circle-xmark me-1"></i> Kritiek</span>
+                    <h5>Geen gestructureerde data (Schema.org)</h5>
+                    <p class="mb-0">Er is geen Schema.org markup aanwezig voor LocalBusiness, HairSalon of Service. Hierdoor mist de site rich snippets in Google (openingstijden, reviews, locatie). Dit kost direct zichtbaarheid en klikken in de zoekresultaten.</p>
+                </div>
+
+                <div class="issue-card">
+                    <span class="severity critical"><i class="fa-solid fa-circle-xmark me-1"></i> Kritiek</span>
+                    <h5>Geen Google Reviews integratie op de website</h5>
+                    <p class="mb-0">Google Reviews worden niet getoond op de website. Social proof is een van de sterkste conversiefactoren voor lokale dienstverleners. Klanten willen reviews zien voordat ze een afspraak maken. De concurrentie toont hun reviews wel prominent.</p>
+                </div>
+
+                <div class="issue-card warning">
+                    <span class="severity warning"><i class="fa-solid fa-triangle-exclamation me-1"></i> Waarschuwing</span>
+                    <h5>Verouderde content (laatste update 2021)</h5>
+                    <p class="mb-0">De website-content is grotendeels ongewijzigd sinds 2021. Google geeft de voorkeur aan verse, actuele content. Pagina's met verouderde informatie verliezen geleidelijk hun ranking. Concurrenten met recentere content krijgen voorrang.</p>
+                </div>
+
+                <div class="issue-card warning">
+                    <span class="severity warning"><i class="fa-solid fa-triangle-exclamation me-1"></i> Waarschuwing</span>
+                    <h5>Minimale on-page SEO</h5>
+                    <p class="mb-0">Meta descriptions ontbreken of zijn niet geoptimaliseerd. H1-structuur is inconsistent. Alt-tags op afbeeldingen ontbreken grotendeels. Internal linking is minimaal. Dit zijn basispunten die direct verbeterd kunnen worden.</p>
+                </div>
+
+                <div class="issue-card warning">
+                    <span class="severity warning"><i class="fa-solid fa-triangle-exclamation me-1"></i> Waarschuwing</span>
+                    <h5>Geen lokale SEO-strategie</h5>
+                    <p class="mb-0">Lokale zoekwoorden zoals "kapper woerden", "balayage woerden" of "herenkapper harmelen" worden niet strategisch ingezet. Google Mijn Bedrijf is waarschijnlijk niet optimaal ingericht. Lokale landingspagina's ontbreken.</p>
+                </div>
+
+                <div class="issue-card info">
+                    <span class="severity info"><i class="fa-solid fa-circle-info me-1"></i> Aandachtspunt</span>
+                    <h5>Geen sitemap.xml en beperkte robots.txt</h5>
+                    <p class="mb-0">Een XML-sitemap helpt Google om alle pagina's efficienter te indexeren. De huidige configuratie mist een sitemap en de robots.txt is niet geoptimaliseerd voor maximale crawlbaarheid.</p>
+                </div>
+
+                <div class="issue-card info">
+                    <span class="severity info"><i class="fa-solid fa-circle-info me-1"></i> Aandachtspunt</span>
+                    <h5>Ontbrekende social media tags (Open Graph)</h5>
+                    <p class="mb-0">Open Graph tags voor Facebook en Twitter Cards ontbreken. Wanneer de website gedeeld wordt op social media ziet het er niet optimaal uit, wat de klikratio verlaagt.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEO CHECKLIST -->
+        <section class="bg-dark section-dark text-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="subtitle s2 text-gold text-center">Checklist</div>
+                        <h2 class="text-center mb-5">SEO Checklist — Huidige Status</h2>
+
+                        <div class="checklist-item">
+                            <i class="fa-solid fa-circle-xmark fail"></i>
+                            <div><strong>Blog / Content marketing</strong><br><span style="opacity: 0.7;">Geen blog aanwezig. Geen regelmatige contentpublicatie.</span></div>
+                        </div>
+                        <div class="checklist-item">
+                            <i class="fa-solid fa-circle-xmark fail"></i>
+                            <div><strong>Schema.org gestructureerde data</strong><br><span style="opacity: 0.7;">Geen LocalBusiness, HairSalon of Service markup.</span></div>
+                        </div>
+                        <div class="checklist-item">
+                            <i class="fa-solid fa-circle-xmark fail"></i>
+                            <div><strong>Google Reviews op website</strong><br><span style="opacity: 0.7;">Reviews worden niet getoond. Geen social proof.</span></div>
+                        </div>
+                        <div class="checklist-item">
+                            <i class="fa-solid fa-circle-xmark fail"></i>
+                            <div><strong>XML Sitemap</strong><br><span style="opacity: 0.7;">Geen sitemap.xml aanwezig.</span></div>
+                        </div>
+                        <div class="checklist-item">
+                            <i class="fa-solid fa-triangle-exclamation partial"></i>
+                            <div><strong>Meta descriptions</strong><br><span style="opacity: 0.7;">Gedeeltelijk aanwezig, niet geoptimaliseerd voor zoekwoorden.</span></div>
+                        </div>
+                        <div class="checklist-item">
+                            <i class="fa-solid fa-triangle-exclamation partial"></i>
+                            <div><strong>Heading-structuur (H1-H6)</strong><br><span style="opacity: 0.7;">Inconsistent gebruik. Meerdere H1's op sommige pagina's.</span></div>
+                        </div>
+                        <div class="checklist-item">
+                            <i class="fa-solid fa-triangle-exclamation partial"></i>
+                            <div><strong>Alt-tags op afbeeldingen</strong><br><span style="opacity: 0.7;">Grotendeels ontbrekend of generiek.</span></div>
+                        </div>
+                        <div class="checklist-item">
+                            <i class="fa-solid fa-circle-check pass"></i>
+                            <div><strong>HTTPS / SSL certificaat</strong><br><span style="opacity: 0.7;">Correct geconfigureerd.</span></div>
+                        </div>
+                        <div class="checklist-item">
+                            <i class="fa-solid fa-circle-check pass"></i>
+                            <div><strong>Mobiel-vriendelijk (responsive)</strong><br><span style="opacity: 0.7;">Website is responsive en mobiel bruikbaar.</span></div>
+                        </div>
+                        <div class="checklist-item">
+                            <i class="fa-solid fa-triangle-exclamation partial"></i>
+                            <div><strong>Laadsnelheid</strong><br><span style="opacity: 0.7;">Acceptabel maar kan verbeterd worden (afbeelding optimalisatie).</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AANBEVELINGEN -->
+        <section>
+            <div class="container">
+                <div class="subtitle">Actieplan</div>
+                <h2 class="mb-4">Onze aanbevelingen</h2>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="p-4 rounded-1" style="background: rgba(173,151,79,0.05); border: 1px solid rgba(173,151,79,0.2);">
+                            <h4 class="text-gold"><i class="fa-solid fa-1 me-2"></i> Nieuwe professionele website</h4>
+                            <p>Een volledig nieuwe website met geoptimaliseerde structuur, correcte heading-hierarchie, Schema.org markup, XML sitemap, geoptimaliseerde meta tags en een ingebouwd blogsysteem. Snelle laadtijden via moderne technologie.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-4 rounded-1" style="background: rgba(173,151,79,0.05); border: 1px solid rgba(173,151,79,0.2);">
+                            <h4 class="text-gold"><i class="fa-solid fa-2 me-2"></i> Blog met SEO content</h4>
+                            <p>Maandelijkse blogartikelen geschreven op relevante zoekwoorden: "kapper woerden", "balayage tips", "baardverzorging", "olaplex behandeling". Elke artikel is een nieuwe kans om gevonden te worden in Google.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-4 rounded-1" style="background: rgba(173,151,79,0.05); border: 1px solid rgba(173,151,79,0.2);">
+                            <h4 class="text-gold"><i class="fa-solid fa-3 me-2"></i> Google Reviews integratie</h4>
+                            <p>Automatisch Google Reviews ophalen en tonen op de website. Social proof voor nieuwe bezoekers en een positief SEO-signaal voor Google. Inclusief review-verzoek automation.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-4 rounded-1" style="background: rgba(173,151,79,0.05); border: 1px solid rgba(173,151,79,0.2);">
+                            <h4 class="text-gold"><i class="fa-solid fa-4 me-2"></i> Lokale SEO optimalisatie</h4>
+                            <p>Google Mijn Bedrijf optimalisatie, lokale zoekwoorden in content, NAP-consistentie (Naam, Adres, Postcode) over alle platforms, en lokale backlink strategie.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING -->
+        <section class="bg-dark section-dark text-light">
+            <div class="container">
+                <div class="row justify-content-center text-center mb-5">
+                    <div class="col-lg-8">
+                        <div class="subtitle s2 text-gold">Investering</div>
+                        <h2>Tarieven STUDIOLEE</h2>
+                        <p class="fs-18">Alle prijzen zijn exclusief BTW. Geen verborgen kosten, geen lange contracten.</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <table class="pricing-table">
+                            <thead>
+                                <tr>
+                                    <th>Dienst</th>
+                                    <th>Wat je krijgt</th>
+                                    <th>Prijs</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-light fw-600">Nieuwe website</td>
+                                    <td class="text-light">Volledig nieuwe, SEO-geoptimaliseerde website met blog, Schema.org markup, snelle hosting, responsive design en alle content</td>
+                                    <td class="price text-gold">&euro; 800</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-light fw-600">Hosting & onderhoud</td>
+                                    <td class="text-light">Hosting, SSL, updates, backups, domeinbeheer en technisch onderhoud per jaar</td>
+                                    <td class="price text-gold">&euro; 200 / jaar</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-light fw-600">SaaS pakket</td>
+                                    <td class="text-light">Voice AI, chatbot, CRM, review management, social media planning, automatische blogartikelen (1 per maand), rapportages</td>
+                                    <td class="price text-gold">&euro; 79 / maand</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-light fw-600">Managed service</td>
+                                    <td class="text-light">Volledig beheer: SEO, content, social media, campagnes, rapportages. Alles uit handen. 15 minuten per maand persoonlijk contact.</td>
+                                    <td class="price text-gold">Op aanvraag</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="spacer-single"></div>
+                        <p class="text-center" style="opacity: 0.7; font-size: 14px;">Alle prijzen exclusief BTW. Geen opzegtermijn op het SaaS pakket. Website eigendom blijft van de klant.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VERWACHT RESULTAAT -->
+        <section>
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="subtitle">Verwacht resultaat</div>
+                        <h2>Wat kun je verwachten?</h2>
+                        <p>Met een nieuwe website, regelmatige blogcontent en technische SEO-optimalisatie verwachten wij dat de SEO-score binnen 3-6 maanden stijgt van <strong class="text-red">35/100</strong> naar minimaal <strong class="text-green">70/100</strong>.</p>
+                        <p>Concreet betekent dit: hogere posities in Google voor zoekwoorden als "kapper woerden", "balayage woerden" en "herenkapper woerden". Meer organisch verkeer naar de website, meer telefoontjes en meer afspraken — zonder te betalen voor Google Ads.</p>
+                        <p>De blog fungeert als een contentmachine die continu nieuwe bezoekers aantrekt. Elk artikel richt zich op een specifiek zoekwoord en brengt potentiele klanten naar de website. Na 6-12 maanden met consistent bloggen is het effect exponentieel.</p>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="p-4 rounded-1" style="background: rgba(40,167,69,0.08); border: 2px solid rgba(40,167,69,0.3);">
+                                    <div style="font-size: 48px; font-weight: 800; color: #28a745;">70+</div>
+                                    <div class="fw-600">SEO Score</div>
+                                    <div class="text-muted" style="font-size: 13px;">Verwacht na 6 maanden</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-4 rounded-1" style="background: rgba(173,151,79,0.08); border: 2px solid rgba(173,151,79,0.3);">
+                                    <div style="font-size: 48px; font-weight: 800; color: #AD974F;">12+</div>
+                                    <div class="fw-600">Blogartikelen</div>
+                                    <div class="text-muted" style="font-size: 13px;">Eerste jaar</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-4 rounded-1" style="background: rgba(173,151,79,0.08); border: 2px solid rgba(173,151,79,0.3);">
+                                    <div style="font-size: 48px; font-weight: 800; color: #AD974F;">Top 5</div>
+                                    <div class="fw-600">Google Positie</div>
+                                    <div class="text-muted" style="font-size: 13px;">Voor lokale zoekwoorden</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-4 rounded-1" style="background: rgba(40,167,69,0.08); border: 2px solid rgba(40,167,69,0.3);">
+                                    <div style="font-size: 48px; font-weight: 800; color: #28a745;">3x</div>
+                                    <div class="fw-600">Meer Verkeer</div>
+                                    <div class="text-muted" style="font-size: 13px;">Organisch na 12 maanden</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="bg-dark section-dark text-light">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h2>Klaar om te groeien?</h2>
+                        <p class="fs-18">Dit rapport is opgesteld door STUDIOLEE. Wil je weten wat wij voor Hairstudio Igor kunnen betekenen? Neem contact op voor een vrijblijvend gesprek.</p>
+                        <div class="spacer-half"></div>
+                        <a class="btn-main btn-gold fx-slide" href="contact.html"><span>Neem Contact Op</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- footer -->
+    <footer class="section-dark">
+        <div class="container">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center">
+                        <img src="images/logo.webp" class="w-200px" alt="Hairstudio Igor">
+                        <div class="spacer-single"></div>
+                        <div class="fs-16">Molenvlietbrink 242<br>3448 HS Woerden</div>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer-double"></div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 mb-sm-30">
+                    <div class="d-flex justify-content-center">
+                        <i class="fs-48 text-gold fa-solid fa-phone"></i>
+                        <div class="ms-3"><h4 class="mb-0">Bel Ons</h4><p><a href="tel:0348499861" class="text-white">0348 499 861</a></p></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-sm-30">
+                    <div class="d-flex justify-content-center">
+                        <i class="fs-48 text-gold fa-brands fa-whatsapp"></i>
+                        <div class="ms-3"><h4 class="mb-0">WhatsApp</h4><p><a href="https://wa.me/31620835583" class="text-white">06 20 83 55 83</a></p></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-sm-30">
+                    <div class="d-flex justify-content-center">
+                        <i class="fs-48 text-gold fa-solid fa-clock"></i>
+                        <div class="ms-3"><h4 class="mb-0">Openingstijden</h4><p>Di-Vr 09:00-17:30<br>Za 08:30-16:00<br>Ma gesloten</p></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-sm-30">
+                    <div class="d-flex justify-content-center">
+                        <i class="fs-48 text-gold fa-solid fa-envelope"></i>
+                        <div class="ms-3"><h4 class="mb-0">E-mail</h4><p><a href="mailto:info@hairstudioigor.nl" class="text-white">info@hairstudioigor.nl</a></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subfooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">&copy; 2026 Hairstudio Igor — Woerden</div>
+                    <div class="col-md-6 text-md-end">
+                        Rapport door <a href="https://www.studiolee.nl" target="_blank" class="studiolee-link">STUDIOLEE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/vendors.js"></script>
+    <script src="js/designesia.js"></script>
+
+</body>
+
+</html>

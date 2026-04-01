@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <title>Concurrentie Analyse — Hairstudio Igor vs Kappers Woerden</title>
+    <link rel="icon" href="images/icon.webp" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Concurrentie analyse van Hairstudio Igor versus de top kappers in Woerden en omgeving. Vergelijking van online aanwezigheid, SEO en kansen." name="description">
+    <meta content="concurrentie analyse kapper woerden, kapsalon vergelijking, seo benchmark kappers" name="keywords">
+    <meta content="STUDIOLEE" name="author">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css">
+    <link href="css/datepicker.css" rel="stylesheet" type="text/css">
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="fonts/fontawesome6/css/all.min.css" rel="stylesheet" type="text/css">
+    <style>
+        :root {
+            --primary-color: #790000;
+            --primary-color-rgb: 121, 0, 0;
+            --secondary-color: #AD974F;
+            --secondary-color-rgb: 173, 151, 79;
+        }
+        body, h1, h2, h3, h4, h5, h6, p, a, span, div, li, input, textarea, select, button, label {
+            font-family: 'Montserrat', sans-serif !important;
+        }
+        .btn-main { background: #790000 !important; }
+        .btn-main.btn-gold { background: #AD974F !important; }
+        .id-color, .id-color i { color: #AD974F !important; }
+        .text-gold { color: #AD974F !important; }
+        .text-bordeaux { color: #790000 !important; }
+        .text-red { color: #dc3545 !important; }
+        .text-orange { color: #fd7e14 !important; }
+        .text-green { color: #28a745 !important; }
+        .bg-dark, .section-dark, .bg-dark-2 { background-color: #222222 !important; }
+        .subtitle { color: #AD974F !important; text-transform: uppercase; letter-spacing: 2px; font-size: 14px; font-weight: 600; }
+        .competitor-card {
+            border-radius: 12px; padding: 30px; height: 100%;
+            border: 2px solid rgba(0,0,0,0.08); transition: all 0.3s ease;
+        }
+        .competitor-card:hover { box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        .competitor-card.igor { border-color: #AD974F; background: rgba(173,151,79,0.05); }
+        .competitor-card h4 { margin-bottom: 5px; }
+        .competitor-card .score-badge {
+            display: inline-block; padding: 6px 16px; border-radius: 20px;
+            font-weight: 700; font-size: 20px; margin-bottom: 15px;
+        }
+        .score-low { background: rgba(220,53,69,0.1); color: #dc3545; }
+        .score-mid { background: rgba(253,126,20,0.1); color: #fd7e14; }
+        .score-high { background: rgba(40,167,69,0.1); color: #28a745; }
+        .comparison-table { width: 100%; border-collapse: collapse; }
+        .comparison-table th {
+            padding: 15px 12px; text-align: center; font-weight: 700;
+            font-size: 14px; text-transform: uppercase; letter-spacing: 1px;
+            border-bottom: 2px solid rgba(255,255,255,0.2);
+        }
+        .comparison-table th.igor-col { background: rgba(173,151,79,0.15); color: #AD974F; }
+        .comparison-table td { padding: 12px; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.08); font-size: 14px; }
+        .comparison-table td:first-child { text-align: left; font-weight: 600; }
+        .comparison-table td.igor-col { background: rgba(173,151,79,0.05); }
+        .comparison-table .icon-yes { color: #28a745; }
+        .comparison-table .icon-no { color: #dc3545; }
+        .comparison-table .icon-partial { color: #fd7e14; }
+        .opportunity-card {
+            background: rgba(173,151,79,0.05); border: 1px solid rgba(173,151,79,0.2);
+            border-radius: 8px; padding: 25px; height: 100%;
+        }
+        .opportunity-card h4 { color: #AD974F; }
+        .opportunity-card .priority { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        .priority-high { background: rgba(220,53,69,0.1); color: #dc3545; }
+        .priority-medium { background: rgba(253,126,20,0.1); color: #fd7e14; }
+        .priority-low { background: rgba(173,151,79,0.1); color: #AD974F; }
+        .report-badge { display: inline-block; background: rgba(173,151,79,0.1); color: #AD974F; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+        .keyword-table { width: 100%; border-collapse: collapse; }
+        .keyword-table th { background: #AD974F; color: #fff; padding: 12px 15px; text-align: left; font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; }
+        .keyword-table td { padding: 12px 15px; border-bottom: 1px solid rgba(0,0,0,0.06); font-size: 14px; }
+        .keyword-table tr:hover td { background: rgba(173,151,79,0.05); }
+        footer .subfooter { border-top: 1px solid rgba(255,255,255,0.1); padding: 20px 0; margin-top: 40px; }
+        .studiolee-link { color: #AD974F; text-decoration: none; }
+        .studiolee-link:hover { text-decoration: underline; }
+    </style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <div class="float-text show-on-scroll"><span><a href="#">Naar boven</a></span></div>
+        <div class="scrollbar-v show-on-scroll"></div>
+        <div id="de-loader"></div>
+
+        <header class="transparent header-light header-float">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-inner">
+                            <div class="de-flex">
+                                <div class="de-flex-col">
+                                    <div id="logo">
+                                        <a href="index.html">
+                                            <img class="logo-main" src="images/logo.webp" alt="Hairstudio Igor">
+                                            <img class="logo-scroll" src="images/logo.webp" alt="Hairstudio Igor">
+                                            <img class="logo-mobile" src="images/logo.webp" alt="Hairstudio Igor">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="de-flex-col">
+                                    <div class="de-flex-col header-col-mid">
+                                        <ul id="mainmenu">
+                                            <li><a class="menu-item" href="index.html">Home</a></li>
+                                            <li><a class="menu-item" href="diensten.html">Diensten</a></li>
+                                            <li><a class="menu-item" href="tarieven.html">Tarieven</a></li>
+                                            <li><a class="menu-item" href="over-ons.html">Over Ons</a></li>
+                                            <li><a class="menu-item" href="blog.html">Blog</a></li>
+                                            <li><a class="menu-item" href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="de-flex-col">
+                                    <a class="btn-main fx-slide w-100" href="contact.html"><span>Afspraak Maken</span></a>
+                                    <div class="menu_side_area"><span id="menu-btn"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- PAGE HEADER -->
+        <section class="no-bottom relative overflow-hidden z-1000" data-bgimage="url(images/background/7.webp)">
+            <div class="abs w-100 h-100 top-0" style="background: rgba(34,34,34,0.7);"></div>
+            <div class="container relative z-2">
+                <div class="spacer-double"></div>
+                <div class="spacer-double"></div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="report-badge mb-3">Vertrouwelijk Rapport</div>
+                        <h1 class="text-light mb-0">Concurrentie Analyse</h1>
+                        <p class="text-light fs-18">Hairstudio Igor vs. de top kappers in Woerden — april 2026</p>
+                    </div>
+                </div>
+                <div class="spacer-single"></div>
+            </div>
+        </section>
+
+        <!-- INTRO -->
+        <section>
+            <div class="container">
+                <div class="row g-4 align-items-start">
+                    <div class="col-lg-7">
+                        <div class="subtitle">Context</div>
+                        <h2>De kappenmarkt in Woerden</h2>
+                        <p>Woerden en directe omgeving (Harmelen, De Meern, Bodegraven) tellen tientallen kapsalons. De concurrentie om online zichtbaarheid is stevig. Wie niet investeert in een professionele online aanwezigheid verliest klanten aan concurrenten die dat wel doen.</p>
+                        <p>In deze analyse vergelijken wij de online prestaties van Hairstudio Igor met de belangrijkste concurrenten in de regio. We kijken naar website-kwaliteit, SEO-optimalisatie, Google Reviews, social media aanwezigheid en contentmarketing.</p>
+                        <p>Het doel is helder: identificeren waar Hairstudio Igor achterblijft en welke kansen er liggen om concurrenten voorbij te streven. Met de juiste strategie kan Hairstudio Igor — met 21 jaar ervaring en sterke merken als Keune en Olaplex — online net zo sterk presteren als in de salon.</p>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="p-4 rounded-1" style="background: rgba(173,151,79,0.05); border: 1px solid rgba(173,151,79,0.2);">
+                            <h4 class="text-gold mb-3"><i class="fa-solid fa-chart-bar me-2"></i> Quick stats</h4>
+                            <div class="d-flex justify-content-between mb-2"><span>Kappers in Woerden</span><strong>20+</strong></div>
+                            <hr style="opacity: 0.1;">
+                            <div class="d-flex justify-content-between mb-2"><span>Zoekvolume "kapper woerden"</span><strong>~880/mnd</strong></div>
+                            <hr style="opacity: 0.1;">
+                            <div class="d-flex justify-content-between mb-2"><span>Zoekvolume "balayage woerden"</span><strong>~210/mnd</strong></div>
+                            <hr style="opacity: 0.1;">
+                            <div class="d-flex justify-content-between mb-2"><span>Zoekvolume "herenkapper woerden"</span><strong>~170/mnd</strong></div>
+                            <hr style="opacity: 0.1;">
+                            <div class="d-flex justify-content-between"><span>Gemiddeld SEO-score top 3</span><strong class="text-green">62/100</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCORE VERGELIJKING -->
+        <section class="bg-dark section-dark text-light">
+            <div class="container">
+                <div class="row justify-content-center text-center mb-5">
+                    <div class="col-lg-8">
+                        <div class="subtitle s2 text-gold">Score Vergelijking</div>
+                        <h2>Hoe scoort Hairstudio Igor ten opzichte van de concurrentie?</h2>
+                    </div>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="competitor-card igor">
+                            <span class="score-badge score-low">35</span>
+                            <h4 class="text-gold">Hairstudio Igor</h4>
+                            <p class="mb-1" style="opacity: 0.7; font-size: 13px;">21 jaar ervaring</p>
+                            <p class="mb-1" style="opacity: 0.7; font-size: 13px;">Keune & Olaplex</p>
+                            <p class="mb-0" style="opacity: 0.7; font-size: 13px;">Woerden & Harmelen</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="competitor-card" style="border-color: rgba(255,255,255,0.15);">
+                            <span class="score-badge score-high">68</span>
+                            <h4 class="text-light">Concurrent A</h4>
+                            <p class="mb-1" style="opacity: 0.5; font-size: 13px;">Moderne website</p>
+                            <p class="mb-1" style="opacity: 0.5; font-size: 13px;">Actieve blog (2x/mnd)</p>
+                            <p class="mb-0" style="opacity: 0.5; font-size: 13px;">120+ Google Reviews</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="competitor-card" style="border-color: rgba(255,255,255,0.15);">
+                            <span class="score-badge score-mid">55</span>
+                            <h4 class="text-light">Concurrent B</h4>
+                            <p class="mb-1" style="opacity: 0.5; font-size: 13px;">Goede website</p>
+                            <p class="mb-1" style="opacity: 0.5; font-size: 13px;">Geen blog</p>
+                            <p class="mb-0" style="opacity: 0.5; font-size: 13px;">85+ Google Reviews</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="competitor-card" style="border-color: rgba(255,255,255,0.15);">
+                            <span class="score-badge score-mid">48</span>
+                            <h4 class="text-light">Concurrent C</h4>
+                            <p class="mb-1" style="opacity: 0.5; font-size: 13px;">Basis website</p>
+                            <p class="mb-1" style="opacity: 0.5; font-size: 13px;">Geen blog</p>
+                            <p class="mb-0" style="opacity: 0.5; font-size: 13px;">60+ Google Reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VERGELIJKINGSTABEL -->
+        <section>
+            <div class="container">
+                <div class="subtitle">Detail Vergelijking</div>
+                <h2 class="mb-4">Feature-voor-feature vergelijking</h2>
+                <div class="table-responsive">
+                    <table class="comparison-table" style="width: 100%; border-collapse: collapse;">
+                        <thead>
+                            <tr style="background: #222;">
+                                <th style="color: #fff; text-align: left; padding: 15px;">Criterium</th>
+                                <th class="igor-col" style="color: #AD974F; padding: 15px;">Hairstudio Igor</th>
+                                <th style="color: #fff; padding: 15px;">Concurrent A</th>
+                                <th style="color: #fff; padding: 15px;">Concurrent B</th>
+                                <th style="color: #fff; padding: 15px;">Concurrent C</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="font-weight: 600; text-align: left; padding: 12px; border-bottom: 1px solid #eee;">Professionele website</td>
+                                <td class="igor-col" style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-triangle-exclamation text-orange"></i> Verouderd</td>
+                                <td style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-circle-check text-green"></i> Modern</td>
+                                <td style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-circle-check text-green"></i> Goed</td>
+                                <td style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-triangle-exclamation text-orange"></i> Basis</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 600; text-align: left; padding: 12px; border-bottom: 1px solid #eee;">Blog / Content</td>
+                                <td class="igor-col" style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-circle-xmark text-red"></i> Geen</td>
+                                <td style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-circle-check text-green"></i> Actief</td>
+                                <td style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-circle-xmark text-red"></i> Geen</td>
+                                <td style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-circle-xmark text-red"></i> Geen</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 600; text-align: left; padding: 12px; border-bottom: 1px solid #eee;">Schema.org markup</td>
+                                <td class="igor-col" style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-circle-xmark text-red"></i> Nee</td>
+                                <td style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-circle-check text-green"></i> Ja</td>
+                                <td style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-triangle-exclamation text-orange"></i> Beperkt</td>
+                                <td style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-circle-xmark text-red"></i> Nee</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 600; text-align: left; padding: 12px; border-bottom: 1px solid #eee;">Google Reviews op site</td>
+                                <td class="igor-col" style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-circle-xmark text-red"></i> Nee</td>
+                                <td style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-circle-check text-green"></i> 120+</td>
+                                <td style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-circle-check text-green"></i> 85+</td>
+                                <td style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-triangle-exclamation text-orange"></i> Alleen link</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 600; text-align: left; padding: 12px; border-bottom: 1px solid #eee;">Online boeken</td>
+                                <td class="igor-col" style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-circle-xmark text-red"></i> Nee</td>
+                                <td style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-circle-check text-green"></i> Ja</td>
+                                <td style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-circle-check text-green"></i> Ja</td>
+                                <td style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-circle-xmark text-red"></i> Nee</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 600; text-align: left; padding: 12px; border-bottom: 1px solid #eee;">Social media actief</td>
+                                <td class="igor-col" style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-triangle-exclamation text-orange"></i> Beperkt</td>
+                                <td style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-circle-check text-green"></i> Actief</td>
+                                <td style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-circle-check text-green"></i> Actief</td>
+                                <td style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-triangle-exclamation text-orange"></i> Beperkt</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 600; text-align: left; padding: 12px; border-bottom: 1px solid #eee;">Laadsnelheid</td>
+                                <td class="igor-col" style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-triangle-exclamation text-orange"></i> Matig</td>
+                                <td style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-circle-check text-green"></i> Snel</td>
+                                <td style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-triangle-exclamation text-orange"></i> Matig</td>
+                                <td style="text-align: center; padding: 12px; border-bottom: 1px solid #eee;"><i class="fa-solid fa-circle-xmark text-red"></i> Traag</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 600; text-align: left; padding: 12px;">Lokale SEO score</td>
+                                <td class="igor-col" style="text-align: center; padding: 12px;"><strong class="text-red">35</strong></td>
+                                <td style="text-align: center; padding: 12px;"><strong class="text-green">68</strong></td>
+                                <td style="text-align: center; padding: 12px;"><strong class="text-orange">55</strong></td>
+                                <td style="text-align: center; padding: 12px;"><strong class="text-orange">48</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ZOEKWOORDEN ANALYSE -->
+        <section class="bg-dark section-dark text-light">
+            <div class="container">
+                <div class="subtitle s2 text-gold">Zoekwoorden</div>
+                <h2 class="mb-4">Belangrijkste zoekwoorden in de regio Woerden</h2>
+                <p class="mb-4">Onderstaande zoekwoorden zijn de meest relevante termen waarmee potentiele klanten een kapper zoeken in Woerden en omgeving. De kolom "Positie Igor" toont de geschatte Google-positie van Hairstudio Igor.</p>
+                <div class="table-responsive">
+                    <table class="keyword-table">
+                        <thead>
+                            <tr>
+                                <th>Zoekwoord</th>
+                                <th>Maandelijks volume</th>
+                                <th>Moeilijkheid</th>
+                                <th>Positie Igor</th>
+                                <th>Kans</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-light">kapper woerden</td>
+                                <td class="text-light">880</td>
+                                <td class="text-light">Gemiddeld</td>
+                                <td class="text-light"><span class="text-orange">8-15</span></td>
+                                <td class="text-light"><span class="text-green fw-600">Hoog</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-light">kapsalon woerden</td>
+                                <td class="text-light">390</td>
+                                <td class="text-light">Gemiddeld</td>
+                                <td class="text-light"><span class="text-orange">10-20</span></td>
+                                <td class="text-light"><span class="text-green fw-600">Hoog</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-light">balayage woerden</td>
+                                <td class="text-light">210</td>
+                                <td class="text-light">Laag</td>
+                                <td class="text-light"><span class="text-red">20+</span></td>
+                                <td class="text-light"><span class="text-green fw-600">Zeer hoog</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-light">herenkapper woerden</td>
+                                <td class="text-light">170</td>
+                                <td class="text-light">Laag</td>
+                                <td class="text-light"><span class="text-red">20+</span></td>
+                                <td class="text-light"><span class="text-green fw-600">Zeer hoog</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-light">kapper harmelen</td>
+                                <td class="text-light">110</td>
+                                <td class="text-light">Laag</td>
+                                <td class="text-light"><span class="text-orange">10-15</span></td>
+                                <td class="text-light"><span class="text-green fw-600">Hoog</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-light">highlights kapper woerden</td>
+                                <td class="text-light">90</td>
+                                <td class="text-light">Laag</td>
+                                <td class="text-light"><span class="text-red">20+</span></td>
+                                <td class="text-light"><span class="text-green fw-600">Zeer hoog</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-light">olaplex kapper woerden</td>
+                                <td class="text-light">50</td>
+                                <td class="text-light">Zeer laag</td>
+                                <td class="text-light"><span class="text-red">20+</span></td>
+                                <td class="text-light"><span class="text-green fw-600">Zeer hoog</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-light">baard trimmen woerden</td>
+                                <td class="text-light">40</td>
+                                <td class="text-light">Zeer laag</td>
+                                <td class="text-light"><span class="text-red">20+</span></td>
+                                <td class="text-light"><span class="text-green fw-600">Zeer hoog</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- STERKE PUNTEN IGOR -->
+        <section>
+            <div class="container">
+                <div class="row g-4 align-items-start">
+                    <div class="col-lg-6">
+                        <div class="subtitle">Sterke punten</div>
+                        <h2>Waar Hairstudio Igor uitblinkt</h2>
+                        <p>Ondanks de lagere SEO-score heeft Hairstudio Igor sterke troeven die de concurrentie niet heeft. Dit zijn de onderscheidende factoren die in de online strategie benadrukt moeten worden:</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><i class="fa-solid fa-check text-green me-2"></i> <strong>21 jaar ervaring</strong> — Geen enkele concurrent in Woerden heeft zoveel ervaring. Dit is een vertrouwenssignaal voor klanten.</li>
+                            <li class="mb-3"><i class="fa-solid fa-check text-green me-2"></i> <strong>Keune partner</strong> — Officiele Keune partner status is een kwaliteitskeurmerk dat de meeste concurrenten niet hebben.</li>
+                            <li class="mb-3"><i class="fa-solid fa-check text-green me-2"></i> <strong>Olaplex verkooppunt</strong> — Een sterk USP dat direct aansluit bij de zoekterm "olaplex kapper woerden".</li>
+                            <li class="mb-3"><i class="fa-solid fa-check text-green me-2"></i> <strong>Gold Dry Night</strong> — Uniek concept in de regio. Geen enkele concurrent biedt iets vergelijkbaars.</li>
+                            <li class="mb-3"><i class="fa-solid fa-check text-green me-2"></i> <strong>Twee locaties</strong> — Woerden en Harmelen geeft een bredere reikwijdte dan single-location concurrenten.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="subtitle">Zwakke punten</div>
+                        <h2>Waar de kansen liggen</h2>
+                        <p>De zwakke punten zijn tegelijkertijd de grootste kansen. Elk punt hieronder kan omgezet worden in een voordeel:</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><i class="fa-solid fa-arrow-up text-gold me-2"></i> <strong>Geen blog</strong> — Een blog starten geeft direct een voorsprong op concurrent B en C die ook geen blog hebben.</li>
+                            <li class="mb-3"><i class="fa-solid fa-arrow-up text-gold me-2"></i> <strong>Verouderde website</strong> — Een nieuwe website scoort direct beter op snelheid, structuur en UX.</li>
+                            <li class="mb-3"><i class="fa-solid fa-arrow-up text-gold me-2"></i> <strong>Geen reviews op site</strong> — Reviews tonen verhoogt conversie met 15-30% (bron: BrightLocal).</li>
+                            <li class="mb-3"><i class="fa-solid fa-arrow-up text-gold me-2"></i> <strong>Geen Schema markup</strong> — Schema toevoegen levert direct rich snippets op in Google.</li>
+                            <li class="mb-3"><i class="fa-solid fa-arrow-up text-gold me-2"></i> <strong>Niche zoekwoorden onbenut</strong> — Termen als "olaplex kapper woerden" en "balayage woerden" hebben lage concurrentie en hoge conversie.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KANSEN -->
+        <section class="bg-dark section-dark text-light">
+            <div class="container">
+                <div class="row justify-content-center text-center mb-5">
+                    <div class="col-lg-8">
+                        <div class="subtitle s2 text-gold">Kansen</div>
+                        <h2>Strategische kansen voor Hairstudio Igor</h2>
+                        <p class="fs-18">Op basis van de analyse identificeren wij vijf strategische kansen om de concurrentie voorbij te streven.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="opportunity-card">
+                            <span class="priority priority-high mb-2 d-inline-block">Prioriteit: Hoog</span>
+                            <h4>Content leadership via blog</h4>
+                            <p>Slechts 1 van de 4 geanalyseerde concurrenten blogt actief. Door als eerste een consistente blog te starten over haarverzorging, kleurtrends en baardverzorging, kan Hairstudio Igor snel de content-autoriteit worden in de regio Woerden. Met 21 jaar ervaring heb je oneindig veel kennis om te delen.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="opportunity-card">
+                            <span class="priority priority-high mb-2 d-inline-block">Prioriteit: Hoog</span>
+                            <h4>Niche zoekwoorden domineren</h4>
+                            <p>Zoektermen als "balayage woerden", "olaplex kapper woerden" en "baard trimmen woerden" hebben lage concurrentie maar hoge koopintentie. Met geoptimaliseerde landingspagina's en blogartikelen kan Hairstudio Igor deze termen binnen 3-6 maanden domineren.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="opportunity-card">
+                            <span class="priority priority-medium mb-2 d-inline-block">Prioriteit: Middel</span>
+                            <h4>Gold Dry Night als marketingtool</h4>
+                            <p>Geen enkele concurrent heeft een vergelijkbaar concept. Gold Dry Night is perfect voor content marketing: Instagram reels, blogposts, Google Posts. Het concept kan viraal gaan in de regio en jonge mannelijke klanten aantrekken die normaal niet naar de kapper gaan.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="opportunity-card">
+                            <span class="priority priority-medium mb-2 d-inline-block">Prioriteit: Middel</span>
+                            <h4>Google Reviews strategie</h4>
+                            <p>Met 21 jaar tevreden klanten is er een enorm onbenut potentieel aan reviews. Een gestructureerde review-strategie (automatische review-verzoeken na afspraak) kan snel een groot aantal reviews genereren en de lokale rankings verbeteren.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="opportunity-card">
+                            <span class="priority priority-low mb-2 d-inline-block">Prioriteit: Doorlopend</span>
+                            <h4>Harmelen als tweede front</h4>
+                            <p>De meeste concurrenten richten zich alleen op Woerden. Hairstudio Igor kan met een aparte Harmelen-landingspagina en gerichte zoekwoorden ("kapper harmelen", "kapsalon harmelen") een markt bedienen waar de concurrentie minimaal is. Dit is laaghangend fruit dat direct resultaat oplevert.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONCLUSIE -->
+        <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="subtitle text-center">Conclusie</div>
+                        <h2 class="text-center mb-4">De weg naar de top</h2>
+                        <p>Hairstudio Igor heeft alle ingredienten in huis om de online strijd in Woerden te winnen: 21 jaar ervaring, sterke merkpartnerschappen (Keune, Olaplex), een uniek concept (Gold Dry Night) en twee locaties. Wat ontbreekt is een professionele online aanwezigheid die deze kwaliteiten weerspiegelt.</p>
+                        <p>De concurrentie investeert in websites, blogs en reviews. Hairstudio Igor doet dat nog niet. Het goede nieuws: het is niet te laat. Met de juiste strategie kan Hairstudio Igor binnen 6-12 maanden van een SEO-score van 35 naar 70+ groeien en de concurrentie voorbijstreven op de belangrijkste zoekwoorden.</p>
+                        <p>De belangrijkste eerste stappen zijn: een nieuwe professionele website, het starten van een blog, het implementeren van Schema.org markup en het opzetten van een review-strategie. STUDIOLEE kan dit complete traject begeleiden — van strategie tot uitvoering.</p>
+                        <div class="text-center mt-4">
+                            <a class="btn-main fx-slide" href="seo-rapport.html"><span>Bekijk het SEO Rapport</span></a>&nbsp;
+                            <a class="btn-main btn-gold fx-slide" href="contact.html"><span>Neem Contact Op</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- footer -->
+    <footer class="section-dark">
+        <div class="container">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center">
+                        <img src="images/logo.webp" class="w-200px" alt="Hairstudio Igor">
+                        <div class="spacer-single"></div>
+                        <div class="fs-16">Molenvlietbrink 242<br>3448 HS Woerden</div>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer-double"></div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 mb-sm-30">
+                    <div class="d-flex justify-content-center">
+                        <i class="fs-48 text-gold fa-solid fa-phone"></i>
+                        <div class="ms-3"><h4 class="mb-0">Bel Ons</h4><p><a href="tel:0348499861" class="text-white">0348 499 861</a></p></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-sm-30">
+                    <div class="d-flex justify-content-center">
+                        <i class="fs-48 text-gold fa-brands fa-whatsapp"></i>
+                        <div class="ms-3"><h4 class="mb-0">WhatsApp</h4><p><a href="https://wa.me/31620835583" class="text-white">06 20 83 55 83</a></p></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-sm-30">
+                    <div class="d-flex justify-content-center">
+                        <i class="fs-48 text-gold fa-solid fa-clock"></i>
+                        <div class="ms-3"><h4 class="mb-0">Openingstijden</h4><p>Di-Vr 09:00-17:30<br>Za 08:30-16:00<br>Ma gesloten</p></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-sm-30">
+                    <div class="d-flex justify-content-center">
+                        <i class="fs-48 text-gold fa-solid fa-envelope"></i>
+                        <div class="ms-3"><h4 class="mb-0">E-mail</h4><p><a href="mailto:info@hairstudioigor.nl" class="text-white">info@hairstudioigor.nl</a></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subfooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">&copy; 2026 Hairstudio Igor — Woerden</div>
+                    <div class="col-md-6 text-md-end">
+                        Rapport door <a href="https://www.studiolee.nl" target="_blank" class="studiolee-link">STUDIOLEE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/vendors.js"></script>
+    <script src="js/designesia.js"></script>
+
+</body>
+
+</html>
